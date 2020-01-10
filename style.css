@@ -1,0 +1,216 @@
+img {
+  width: 400px;
+}
+
+:root {
+  --accent:rgba(206, 47, 28, 1);
+  --secondary:rgba(153, 75, 29, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.txtA {
+  color: var(--accent);
+  letter-spacing: 0.1rem;
+}
+
+.txtB {
+  color: var(--secondary);
+}
+
+.txtC {
+  font-size: calc(1vw + 1rem);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+  text-transform: uppercase;
+  padding: 0.5rem 0.8rem;
+  border: solid var(--accent) 1px;
+}
+
+#landing {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/img/landing.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#landing #nav {
+  width: calc(100vw - 5rem);
+  max-width: 1200px;
+  height: 10vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#landing #nav i {
+  color: var(--accent);
+  font-size: calc(2vw + 1rem);
+}
+
+#landing #ldnBody {
+  height: 90vh;
+  width: calc(100vw - 5rem);
+  max-width: 900px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: " . div";
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#landing #ldnBody #div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: div;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-self: flex-end;
+}
+
+#landing #ldnBody #div #ldnBtn {
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#landing #ldnBody #div #ldnBtn a {
+  padding: 1rem 3.5rem;
+  background-color: var(--accent);
+  color: white;
+}
+
+#landing #ldnBody #div #ldnTxt {
+  text-align: right;
+}
+
+#landing #ldnBody #div #ldnTxt h1 {
+  font-size: calc(3vw + 3rem);
+}
+
+#landing #ldnBody #div #ldnTxt h4 {
+  color: white;
+  font-size: calc(1vw + 1rem);
+}
+
+.subline {
+  font-size: calc(1vw + 1.2rem);
+}
+
+#bnth {
+  border: 1px dashed var(--accent);
+  margin: 2%;
+  text-align: center;
+}
+
+#bnth img {
+  width: 100%;
+  max-width: 400px;
+}
+
+#bnth #quote #quoteTxt {
+  margin: 5% auto;
+  font-size: calc(1vw + 1rem);
+}
+
+#bnth #Ing {
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+#bnth #Ing h3 {
+  font-size: calc(2vw + 1.5rem);
+  text-align: left;
+  margin: 10px 5%;
+}
+
+#bnth #Ing h4 {
+  text-align: right;
+  margin: 50px 5%;
+}
+
+#bnth #Ing p {
+  text-align: right;
+  margin: 50px 5%;
+}
+
+#bnth #Ing p:nth-child(1) {
+  text-align: left;
+}
+
+#cta {
+  margin: 50px auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#cta img {
+  margin: 0 auto;
+}
+
+#cta a {
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: white;
+  width: 70%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+#abt h3, #abt h2, #abt p {
+  margin: 0 2%;
+}
+
+#abt h3 {
+  font-size: calc(2vw + 1.5rem);
+  text-align: left;
+  margin: 10px 5%;
+}
+
+#abt h2 {
+  font-size: calc(1vw + 1.5rem);
+  text-align: right;
+}
+
+#abt p {
+  text-align: right;
+  margin: 50px 5%;
+}
+
+#abt p:nth-child(1) {
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */

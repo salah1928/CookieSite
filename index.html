@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/67bf1e6382.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display|Red+Hat+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>CookieMan</title>
 </head>
 <body>
     <div id="landing">
         <div id="nav">
-            <i class="fas fa-cookie-bite"></i>
-            <i class="fas fa-grip-lines"></i>
+            <i class=" fas fa-cookie-bite"></i>
+            <i onclick="shownav()" id="menu" class="fas fa-grip-lines"></i>
+            
+        </div>
+        <div id="sidenav">
+            <ul>
+                <li><a onclick="shownav()" href="#abt">About Us</a onclick="shownav()"></li>
+                <li><a onclick="shownav()" href="#cta">Take A Cookie</a></li>
+                <li><a onclick="shownav()" href="#Ing">Ingredients</a></li>
+                <li><a onclick="shownav()" href="#quote">Quote</a></li>
+                <li><span onclick="shownav()">Close</span></li>
+            </ul>
         </div>
         <div id="ldnBody">
            <div id="div">
@@ -29,77 +40,102 @@
     <div id="bnth">
         <div id="quote">
             <div id="quoteTxt">
-                <p class="txtA">Back to the essence.</br>
-                    We are true artisan bakers.</br>
-                    Proud of our rich heritage.</br>
-                    Ready for tomorrow.</p>
+                <p class="txtA">Back to the essence.</br> We are true artisan bakers.</br>Proud of our rich heritage.</br>Ready for tomorrow.</p>
             </div>
             <div id="quoteImg">
                 <img src="/img/quote.jpg" alt="">
             </div>
         </div><!--Quote-->
         <div id="Ing">
-            <h3 class="txtB headline">Ingredients</h3>
+            <h3 class="txtB headline lax" data-lax-preset="leftToRight-.1 ">Ingredients</h3>
             <div id="natural" class="ing">
-                <h4 class="txtB subline">
+                <h4 data-lax-preset="rightToLeft-.05 " class="lax txtB subline">
                     100% Natural
                 </h4>
                 <p class="txtC">
                     Jules Destrooper stands for pure, full flavours, without preservatives, colourings or artificial flavourings. In a nutshell, premium quality: the greatest care and the best natural ingredients. 
                 </p>
-                <img src="/img/ing1.jpg" alt="">
+                <img  data-lax-preset="zoomInOut " class="lax"    src="/img/ing1.jpg" alt="">
             </div>
-            <div id="natural" class="ing">
-                <h4 class="txtB subline">
+            <div id="origin" class="ing">
+                <h4 data-lax-preset="leftToRight-.1 " class="lax txtB subline">
                     Origin
                 </h4>
                 <p class="txtC">
                     Jules Destrooper's biscuits are valued around the world because of their refined taste, crispy texture and sensational flavour.  
                 </p>
-                <img src="/img/ing2.jpg" alt="">
+                <img  data-lax-preset="zoomInOut " class="lax"  src="/img/ing2.jpg" alt="">
             </div>
             <div id="natural" class="ing">
                 <p class="txtC">
                     We select only the best ingredients, such as the purest summer butter, Belgian chocolate and delicious almonds from Valencia.</p>
-                <img src="/img/ing3.jpg" alt="">
+                <img  data-lax-preset="zoomInOut " class="lax"  src="/img/ing3.jpg" alt="">
             </div>
         </div><!--Ing-->
         <div id="cta">
             <div id="ctaTxt">
-                <h4 class="txtB">Life Is Hard, Take A Break,</h4>
-                <h1 class="txtA">TAKE A COOKIE</h1>
+                <h4 data-lax-preset="leftToRight-.1 " class="lax txtB">Life Is Hard, Take A Break,</h4 >
+                <h1 data-lax-preset="rightToLeft-.1 " class="lax txtA">TAKE A COOKIE</h1>
             </div>
             <img src="/img/cta.jpg" alt="">
-            <a href="#cta">GET A TASTE</a>
+            <a data-lax-preset="rightToleft-.1 " class="lax" href="#cta">GET A TASTE</a>
         </div><!--cta-->
         <div id="abt">
-            <h3 class="txtB headline">About Us</h3>
+            <h3 class="txtB headline lax" data-lax-preset="leftToRight-.1 ">About Us</h3>
             <div id="intro">
-                <h2 class="txtA">Cookie Company</h2>
+                <h2 class="txtA lax" data-lax-preset="rightToLeft-.1 ">Cookie Company</h2>
                 <p class="txtC">
                     Faucibus urna, laoreet diam, volutpat, nibh mattis sit netus nullam. Etiam blandit sed pulvinar nisl sit nullam non fringilla.
                 </p>
-                <img src="/img/abt1.jpg" alt="">
+                <img  data-lax-preset="zoomInOut " class="lax"  src="/img/abt1.jpg" alt="">
             </div>
             <div class="our">
-                <h3 class="txtB subline">
+                <h4 data-lax-preset="rightToLeft-.1 " class="lax txtB subline">
                     Our Philosophy
-                </h3>
+                </h4>
                 <p class="txtC">
                     Faucibus urna, laoreet diam, volutpat, nibh mattis sit netus nullam. Etiam blandit sed pulvinar nisl sit nullam non fringilla.
                 </p>
-                <img src="/img/abt2.jpg" alt="">
+                <img data-lax-preset="zoomInOut " class="lax" src="/img/abt2.jpg" alt="">
             </div>
-            <div class="our">
-                <h3 class="txtB subline">
+            <div class="our" id="o2">
+                <h4 data-lax-preset="leftToRight-.1 " class="lax txtB subline">
                     Our History
-                </h3>
+                </h4>
                 <p class="txtC">
                     Faucibus urna, laoreet diam, volutpat, nibh mattis sit netus nullam. Etiam blandit sed pulvinar nisl sit nullam non fringilla.
                 </p>
-                <img src="/img/abt3.jpg" alt="">
+                <img  data-lax-preset="zoomInOut " class="lax"  src="/img/abt3.jpg" alt="">
+            </div>
+        </div><!--abt-->
+        <div id="contact">
+            <div id="cred">
+                <h3>Contact Us</h3>
+                <h4>06 12 34 56 78</h4>
+                <h4>email@email.email</h4>
+            </div>
+            <div id="form">
+                <input placeholder="Name" type="text" name="name" id="name">
+                <input placeholder="Email" type="email" name="email" id="email">
+                <textarea placeholder="Message..." name="msg" id="msg" cols="30" rows="10"></textarea>
             </div>
         </div>
-    </div>
+    </div><!--bnth-->
+    <footer>
+        <div id="footer">
+            <h4>Cookie Company</h4>
+            <ul>
+                <li><a href="#abt">About Us</a></li>
+                <li><a href="#cta">Take A Cookie</a></li>
+                <li><a href="#Ing">Ingredients</a></li>
+                <li><a href="#quote">Quote</a></li>
+            </ul>
+            <h3>Copyright @ 2020</h3>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

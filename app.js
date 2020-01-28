@@ -59,3 +59,63 @@ function shownav(){
     sidenav.classList.toggle('navshown')
    
 }
+
+
+
+//setup vars
+let container;
+let camera;
+let renderer;
+let scene;
+let cue;
+
+function init(){
+    container = document.querySelector('.scene');
+
+    //create scene
+    scene = new THREE.Scene();
+
+    const fov = 35;
+    const aspect = container.clientWidth / container.clientHeight;
+    const near = 0.1;
+    const far = 100000;
+    
+    //camera setup
+
+    camera = new THREE.PerspectiveCamera(fov,aspect,near,far);
+
+    camera.position.set(0,0,1);
+
+    //light
+    const ambient = new THREE.AmbientLight(0x404040,7);
+    scene.add(ambient)
+
+    const light = new THREE.DirectionalLight(0xd51d1b,2)
+    light.position.set(10,10,100);
+    scene.add(light)
+    //renderer
+    renderer = new THREE.WebGLRenderer({antialias:true,alpha:true});
+    renderer.setSize(window.innerWidth,window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+
+    container.appendChild(renderer.domElement);
+
+
+    //load model
+    let loader = new THREE.GLTFLoader();
+    loader.load('/tyr/scene.gltf',function(gltf){
+        scene.add(gltf.scene);
+        cue = gltf.scene.children[0]
+        animate()
+    });
+    
+}
+
+function animate(){
+    requestAnimationFrame(animate)
+    cue.rotation.z += 0.005; 
+    renderer.render(scene,camera)
+
+}
+
+init();
